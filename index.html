@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane's Anti-Bullying Pamphlet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Jane's Anti-Bullying Pamphlet</div>
+        <nav>
+            <button class="nav-btn active" data-section="comic">Comic Book</button>
+            <button class="nav-btn" data-section="video">Lecture Video</button>
+            <button class="nav-btn" data-section="making">Production Process</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Comic Book Section -->
+        <section id="comic" class="section active">
+            <div class="comic-container">
+                <button id="prevBtn" class="nav-button">Previous</button>
+                <div class="comic-page">
+                    <img id="comicImage" src="1.png" alt="Comic Page">
+                </div>
+                <button id="nextBtn" class="nav-button">Next</button>
+            </div>
+        </section>
+
+        <!-- Lecture Video Section -->
+        <section id="video" class="section">
+            <div class="video-container">
+                <video controls>
+                    <source src="v.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+        </section>
+
+        <!-- Production Process Section -->
+        <section id="making" class="section">
+            <div class="video-container">
+                <video controls>
+                    <source src="v2.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
